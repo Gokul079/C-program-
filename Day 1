@@ -35,3 +35,22 @@ int main()
 
 3rd program
 
+#include<stdio.h>
+int main()
+{
+int num,key,min=0;
+scanf("%d ",&num);
+int arr[num];
+for(int count=0;count<num;count++)
+    scanf("%d",&arr[count]);
+scanf("%d",&key);
+for(int count=0;count<num;count++)
+{
+  if(arr[count]<key)
+       min++;
+}
+printf("%d",min);
+return 0;
+}
+
+4th program
