@@ -54,3 +54,25 @@ return 0;
 }
 
 4th program
+
+#include<stdio.h>
+int main()
+{
+int num;
+scanf("%d ",&num);
+int arr[num];
+for(int count=0;count<num;count++)
+    scanf("%d",&arr[count]);
+for(int count=0;count<num;count++)
+{
+  for (int j = count + 1; j < num; j++) 
+    {
+        if(arr[count]==arr[j])
+     printf("%d ",arr[count]);
+    }
+}
+return 0;
+}
+
+5th program
+
