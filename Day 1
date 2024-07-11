@@ -76,3 +76,26 @@ return 0;
 
 5th program
 
+#include<stdio.h>
+int main(){
+    int num,search,count;
+    scanf("%d",&num);
+    int arr[num];
+    for(count=0;count<num;count++)
+        scanf("%d",&arr[count]);
+    scanf("%d",&search);
+   for(count=0;count<num;count++)
+   {
+       if(search==arr[count])
+       {
+         printf("%d",count);
+         break;
+       }
+        else if(count==num-1)
+        printf("-1");
+   }
+
+
+    return 0;
+}
+
