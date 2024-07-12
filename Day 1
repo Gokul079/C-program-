@@ -1,4 +1,5 @@
 1st program array
+
 #include<stdio.h>
 int main()
 {
@@ -98,4 +99,84 @@ int main(){
 
     return 0;
 }
+
+6th program
+
+#include <stdio.h>
+
+int main()
+{
+    int noe;  
+    scanf("%d", &noe);  
+    int arr[noe];  
+    for(int i = 0; i < noe; i++)  
+        scanf("%d", &arr[i]);  
+    for(int i = 0; i < noe; i++)  
+    {  
+        int min = arr[i];  
+        for(int j = i + 1; j < noe; j++)  
+        {  
+            if(arr[j] < min)  
+            {  
+                int temp = arr[j];  
+                arr[j] = arr[i];  
+                arr[i] = temp;  
+            }  
+        }  
+    }  
+    for(int i = 0; i < noe; i++)  
+    {  
+        printf("%d ", arr[i]);  
+    }  
+  
+
+    return 0;
+}
+
+7th program
+
+#include <stdio.h>
+
+int main()
+{
+     int N, index, sum=0;
+    scanf("%d",&N);
+    int arr[N];
+    for(index=0;index<N;index++)
+{       scanf("%d",&arr[index]);
+        sum+=arr[index];
+ }   for(index=0;index<N;index++)
+    {
+        sum-=arr[index];
+        arr[index]=sum;
+    }
+ for(index=0;index<N;index++)
+        printf("%d ",arr[index]);
+    return 0;
+}
+8th program
+
+#include<stdio.h>
+int main()
+{
+    int N, start, end, index, temp;
+    scanf("%d",&N);
+    int arr[N];
+    for(index=0;index<N;index++)
+            scanf("%d",&arr[index]);
+     start = 0;
+    end = N - 1;
+    while (start < end) {
+        temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+  for(index=0;index<N;index++)
+    printf("%d ",arr[index]);
+    return 0;
+}
+
+9th program
 
