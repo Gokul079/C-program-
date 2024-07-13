@@ -371,6 +371,28 @@ int main()
        str[index]+=32;
        index++;
    }
+
+no of words
+
+
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+   char str[50];
+   fgets(str,sizeof(str),stdin);
+  int index=0,countofwords=0;
+   while(str[index]!='\0')
+   {
+       if(str[index]==' ' ||  str[index]=='\t' || str[index]=='\n')
+           countofwords++;
+           index++;
+   }
+   printf("%d",countofwords);
+
+    return 0;
+}
    printf("%s",str);
 
     return 0;
