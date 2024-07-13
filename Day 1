@@ -281,3 +281,32 @@ int main()
 
     return 0;
 }
+
+
+vowels & consonants
+
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+   char str[50];
+   fgets(str,sizeof(str),stdin);
+   puts(str);
+   int index=0,vowel=0,consonant=0;
+   while(str[index]!='\0')
+   {
+       if((str[index]>='a' && str[index]<='z') ||  (str[index]>='a' && str[index]<='z'))
+       {
+           if(str[index]=='a'|| str[index]=='e'||str[index]=='i'||str[index]=='o'||str[index]=='u'|| str[index]=='A'|| str[index]=='E'||str[index]=='I'||str[index]=='O'||str[index]=='U')
+           vowel++;
+           else
+           consonant++;
+       }
+       
+      index++;
+   }
+   printf("%d vowel \n %d consonant \n",vowel,consonant);
+
+    return 0;
+}
