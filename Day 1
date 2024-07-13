@@ -178,5 +178,32 @@ int main()
     return 0;
 }
 
-9th program
+string
+
+#include <stdio.h>
+
+int main()
+{
+   char str[50];
+   scanf("%c",str);
+   printf("%s",str);
+
+    return 0;
+}
+
+2
+
+#include <stdio.h>
+
+int main()
+{
+   char str[50];
+   fgets(str,sizeof(str),stdin);
+   puts(str);
+
+    return 0;
+}
+
+
+3
 
