@@ -352,3 +352,26 @@ int main()
 
     return 0;
 }
+
+str toggle
+
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+   char str[50];
+   fgets(str,sizeof(str),stdin);
+  int index=0;
+   while(str[index]!='\0')
+   {
+       if(str[index]>='a' && str[index]<='z')
+       str[index]-=32;
+       else if(str[index]>='A' && str[index]<='Z')
+       str[index]+=32;
+       index++;
+   }
+   printf("%s",str);
+
+    return 0;
+}
