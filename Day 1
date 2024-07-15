@@ -493,5 +493,31 @@ int main() {
     return 0;
 }
 
+occurance of character in a string
 
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        char l=s.next().charAt(0);
+        String str=s.nextLine();
+        int len=str.length();
+        int count=0;
+        char[] ch=str.toCharArray();
+        for(int index=0;index<len;index++)
+        {
+                if(l==ch[index])
+                {
+                    count++;
+                }
+        }
+        System.out.println(count);
+    }
+}
 
