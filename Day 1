@@ -469,3 +469,29 @@ int main()
 
     return 0;
 }
+
+character check
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    char str[20];
+     fgets(str,sizeof(str),stdin);
+          int i=0;
+          if(str[i]>='A'  && str[i]<='Z')
+          {
+              printf("%c is uppercase letter",str[i]);
+          }
+          else
+          {
+              printf("%c is lowercase letter",str[i]);
+          }
+    return 0;
+}
+
+
+
