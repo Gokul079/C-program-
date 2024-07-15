@@ -420,3 +420,52 @@ int main()
 
     return 0;
 }
+
+
+repearing characters
+
+#include <stdio.h>
+
+int main()
+{
+     char str[50];
+    fgets(str,sizeof(str),stdin);
+    char alphabet[123]={0};
+    int index=0;
+    while(str[index]!='\0')
+    {
+        alphabet[str[index]]++;
+        index++;
+    }
+    for(index=0;index<123;index++)
+    {
+        if(alphabet[index]>1)
+        printf("\n%c - times %d",index,alphabet[index]);
+    }
+
+    return 0;
+}
+
+sort the characters without repetition
+
+#include <stdio.h>
+
+int main()
+{
+     char str[50];
+     fgets(str,sizeof(str),stdin);
+    char alphabet[123]={0};
+    int index=0;
+    while(str[index]!='\0')
+    {
+        alphabet[str[index]]++;
+        index++;
+    }
+    for(index=0;index<123;index++)
+    {
+        if(alphabet[index]!=0)
+        printf("%c",index);
+    }
+
+    return 0;
+}
